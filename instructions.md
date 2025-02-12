@@ -2,16 +2,13 @@
 
 <details>
   <summary>
-    💡 REPL Guide
+    💡 Code Guide
   </summary>
 
   - To toggle commenting, highlight the line(s) and press Ctrl + /
-  - To move a statement or block of statements one indent to the right, highlight the statement(s)  press Tab
-  - To move a statement or block of statements one indent to the left, highlight the statement(s)  press Shift+Tab
+  - To move a statement or block of statements one indent to the right, select the statement(s)  press Tab
+  - To move a statement or block of statements one indent to the left, select the statement(s)  press Shift+Tab
   - Avoid using backspaces or spaces to remove or place indents
-  - To ask the instructor a code question, highlight the line(s) of code and press Alt + / and type in your question/issue/comment and click on collapse
-  - To view comments placed by the instructor click on the comment icon at the end of any highlighted code
-  - If your issue is resolved, click on Resolve to remove the comment
 </details>
 
 <details>
@@ -19,7 +16,7 @@
      Assignment Instructions
   </summary>
 
-  1. This is a part of the project to validate user input to manage product inventory - each product record has four data elements,
+  1. This is a part of the project to validate user input to manage product inventory - each product record has four comma separated data elements,
      - Product ID
      - Product Name
      - Product Price
@@ -34,12 +31,7 @@
     ✅ Copy Code
   </summary>
   
-  - Copy the employees folder and all its contents from HW08, including the data files (Download the HW08 repl as a zipped folder and unzip and upload folder contents to this assignment)
-  - To the folder products, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py and the employee data files from
-    - CW02 -or-
-    - Exam 1 Prep - Product Inventory
-    whichever has the complete working code
-    - If neither works, copy the code from the solution I repl I posted
+  - To the folder products, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py and the employee data files from Exam 1 Prep - Product Inventory
 
 </details>
 
@@ -63,7 +55,7 @@
   - cannot be all spaces
      
   If user enters a valid product name, we format it where the first character of each word is capitalized, and return this formatted valid name to the calling function.  
-  If the user enters an invalid name, we print Invalid Product Name entered, and ask user to provide product name again.  
+  If the user enters an invalid name, we print `Invalid Product Name` entered, and ask user to provide product name again.  
   The whole process is repeated until the user enters a valid product name
 
 <details>
@@ -75,7 +67,7 @@
     - Using an input statement to ask for employee first name, store it in a variable
     - Using the appropriate string methods, check if name is alphabetical with special characters
       - If yes, set valid to True
-      - If not, print Invalid Product Name Entered
+      - If not, print `Invalid Product Name` Entered
   Outside the while loop, (the product name is valid, if you made it out of the while loop)
   - Format product name to where the first letter of each word is capitalized and the rest of them are lowercase
   - Return this formatted product name<br>
@@ -91,7 +83,7 @@
     ✅ Test validate_product_name
   </summary>
 
-  - Comment out any code inside main
+  - Comment out any code inside main body
   - call validate_product_name and store in a variable (may have to import the module)
   - print this variable and test code
 </details>
@@ -116,7 +108,7 @@
   - Start a while loop by checking if valid is False
   - Inside the while loop
     - Using an input statement to ask for price, store it in a variable
-  - Using the appropriate string methods, check if price is only numeric, may contain only ., no alphabetic characters
+  - Using the appropriate string methods, check if price is only numeric, may contain only `.` and no alphabetic characters
   - If yes, set valid to True
   - If not, print Invalid Price Entered
   Outside the while loop, (the price is valid, if you made it out of the while loop)
@@ -124,11 +116,11 @@
 </details>
   
 <details>
-  <summary>💡 Testing</summary>
+  <summary>📜 Testing</summary>
 
 - If the user enters ten thousand, the output must be Invalid Price Entered
 - If the user enters $1000, the output must be Invalid Price Entered
-- If the user enters 350.99, it is a valid input
+- If the user enters 455 or 350.99, those are valid input
 
 </details>
 </details> 
@@ -151,8 +143,8 @@
   </summary>
 
   - Quantity must be all numeric (no decimal points allowed)
-  - Quantity must be between 0 and 100
-  - Quantity cannot be empty
+  - Quantity must be between 1 and 100
+  - Quantity cannot be all spaces
 
 <details>
   <summary>Code Logic</summary>
@@ -171,7 +163,7 @@
 </details>
 
 <details>
-  <summary>💡 Testing</summary>
+  <summary>📜 Testing</summary>
 
 - If the user enters apple, the output must be Invalid Quantity Entered
 - If the user enters 30000 or 35.0, the output must be Invalid Quantity Entered
@@ -193,37 +185,4 @@
   - print the above variable and see if it is working correctly
 </details>
 
-## Finish Code Improvement
 
-<details>
-  <summary>
-    ✅ In all functions files
-  </summary>
-
-  - In functions.py and validations.py, change filename to products1.txt (use the correct file path)
-  - In list_functions.py change filename to products2.txt
-  - In multilist_functions.py change filename to products3.txt
-  - Test and make sure data is getting entered correctly into the respective files
-</details>
-
-
-<details>
-  <summary>
-    ✅ Improve Code
-  </summary>
-
-  - Remove any unnecessary print statements or modules
-  - In functions.py, save the filename as a global constant and use that constant everywhere you are opening the file
-  - Use context managers and exception handlers wherever applicable
-  - If file is empty or not available, set default product ID to "3001"
-</details>
-
-## Bonus
-
-<details>
-  <summary>
-    ✅ Bonus generate_email()
-  </summary>
-
-  - If you are done with all these, attempt the bonus for generate_email() in employees module (Check HW08 instructions)
-</details>
