@@ -31,7 +31,10 @@
     ✅ Copy Code
   </summary>
   
-  - To the folder products, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py and the employee data files from Exam 1 Prep - Product Inventory
+  - Create a new project in PyCharm in a folder of your choice
+  - Create a new folder called **products**
+  - To the folder products, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py files from CW05
+  - Download the products.csv file
 
 </details>
 
