@@ -34,7 +34,8 @@
   - Create a new project in PyCharm in a folder of your choice
   - Create a new folder called **cw06**
   - To the folder cw06, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py files from cw05
-  - Download the products.csv file
+  - Download products.csv https://github.com/suchialex/CINS3002-CW06/blob/main/products.csv
+  - Download products.txt https://github.com/suchialex/CINS3002-CW06/blob/main/products.txt
 
 </details>
 
