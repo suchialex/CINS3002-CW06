@@ -32,8 +32,8 @@
   </summary>
   
   - Create a new project in PyCharm in a folder of your choice
-  - Create a new folder called **products**
-  - To the folder products, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py files from CW05
+  - Create a new folder called **cw06**
+  - To the folder cw06, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py files from cw05
   - Download the products.csv file
 
 </details>
