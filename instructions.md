@@ -87,6 +87,7 @@
   Outside the while loop, (the product name is valid, if you made it out of the while loop)
   - Format product name to where the first letter of each word is capitalized and the rest of them are lowercase
   - Return this formatted product name
+</details>
 
 <details>
   <summary>📜 Testing</summary>
