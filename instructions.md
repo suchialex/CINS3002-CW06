@@ -2,45 +2,55 @@
 
 <details>
   <summary>
-    💡 Code Guide
+    💡 REPL/PyCharm Guide
   </summary>
 
   - To toggle commenting, highlight the line(s) and press Ctrl + /
-  - To move a statement or block of statements one indent to the right, select the statement(s)  press Tab
-  - To move a statement or block of statements one indent to the left, select the statement(s)  press Shift+Tab
+  - To move a statement or block of statements one indent to the right, highlight the statement(s)  press Tab
+  - To move a statement or block of statements one indent to the left, highlight the statement(s)  press Shift+Tab
   - Avoid using backspaces or spaces to remove or place indents
+  - REPL Comments
+    - To ask the instructor a code question, highlight the line(s) of code and press Alt + / and type in your question/issue/comment and click on collapse
+    - To view comments placed by the instructor click on the comment icon at the end of any highlighted code
+    - If your issue is resolved, click on Resolve to remove the comment
 </details>
+
 
 <details>
   <summary>
-     Assignment Instructions
+    Assignment Instructions
   </summary>
 
-  1. This is a part of the project to validate user input to manage product inventory - each product record has four comma separated data elements,
+1. This is a part of the project to validate user input to manage product inventory - each product record has four comma separated data elements,
      - Product ID
      - Product Name
      - Product Price
      - Product Quantity 
   2. These validations will be coded in validations.py
-</details>   
+</details>
 
-# Start Working
+## Start Working
 
 <details>
   <summary>
-    ✅ Copy Code
+    ✅ Create a new PyCharm project
   </summary>
-  
-  - Create a new project in PyCharm in a folder of your choice
-  - Create a new folder called **cw06**
-  - To the folder cw06, copy all the code in functions.py, list_functions.py, multilist_functions.py, validations.py files from cw05
-  - Download products.csv https://github.com/suchialex/CINS3002-CW06/blob/main/products.csv
-  - Download products.txt https://github.com/suchialex/CINS3002-CW06/blob/main/products.txt
 
+- Create a new project in PyCharm and a folder of your choice
+- Copy main.py from HW05
+- Create a new folder called **cw06**
+- Copy the code for the functions below from HW05 into the folder **cw06**
+   - functions.py
+   - list_functions.py
+   - multilist_functions.py
+   - validations.py
+- Download the data files to the folder **cw06**
+   - employees.txt https://github.com/suchialex/CINS3002-HW06/blob/main/employees.txt
+   - employees.csv https://github.com/suchialex/CINS3002-HW06/blob/main/employees.csv
+- Because of this new folder structure, you will have to change your import statements and file open functions with the correct file path
 </details>
 
 
-  
 ## In validations.py
 
 <details>
@@ -51,19 +61,19 @@
   Parameters: This function doesn't accept any parameters  
   Return: It returns a string (the validated product name)  
   
-  Description:  
+  **Description:**  
   The purpose of this function is to ask the user to provide a product name and check if it is a valid name - which is, 
   - all alphabetical characters
   - special characters are allowed
   - no numbers allowed
   - cannot be all spaces
      
-  If user enters a valid product name, we format it where the first character of each word is capitalized, and return this formatted valid name to the calling function.  
-  If the user enters an invalid name, we print `Invalid Product Name` entered, and ask user to provide product name again.  
+  If user enters a valid product name, we format it where the first character of each word is capitalized, and return this formatted valid name to the calling function  
+  If the user enters an invalid name, we print `Invalid Product Name` entered, and ask user to provide product name again  
   The whole process is repeated until the user enters a valid product name
 
 <details>
-  <summary>Code Logic</summary>
+  <summary>🔑 Code Logic</summary>
   
   - Set a flag called valid to False
   - Start a while loop by checking if valid is False
@@ -74,7 +84,7 @@
       - If not, print `Invalid Product Name` Entered
   Outside the while loop, (the product name is valid, if you made it out of the while loop)
   - Format product name to where the first letter of each word is capitalized and the rest of them are lowercase
-  - Return this formatted product name<br>
+  - Return this formatted product name
 </details>
   
 </details>
@@ -88,7 +98,7 @@
   </summary>
 
   - Comment out any code inside main body
-  - call validate_product_name and store in a variable (may have to import the module)
+  - call validate_product_name and store in a variable (may have to import the appropriate module)
   - print this variable and test code
 </details>
 
@@ -113,9 +123,9 @@
   - Inside the while loop
     - Using an input statement to ask for price, store it in a variable
   - Using the appropriate string methods, check if price is only numeric, may contain only `.` and no alphabetic characters
-  - If yes, set valid to True
-  - If not, print Invalid Price Entered
-  Outside the while loop, (the price is valid, if you made it out of the while loop)
+    - 💡One way to do this is to replace the . with "" and then check if the resultant string is all numeric, if yes, valid is True else print `Invalid Price Entered`
+    - 💡Another way is to use a try block and convert the input to a float, if exception is raised, valid is False and print `Invalid Price Entered`, in else block valid is True
+  - Outside the while loop, (the price is valid if you made it out of the while loop)
   - Return this valid price
 </details>
   
@@ -143,15 +153,17 @@
 ## In validations.py
 <details>
   <summary>
-    ✅ Modify validate_quantity
+    ✅ Define validate_quantity()
   </summary>
 
+  - This function accepts no parameters and returns an integer
+  - Get user input to get product quantity
   - Quantity must be all numeric (no decimal points allowed)
   - Quantity must be between 1 and 100
   - Quantity cannot be all spaces
 
 <details>
-  <summary>Code Logic</summary>
+  <summary>🔑 Code Logic</summary>
 
   - Set a flag called valid to False
   - Start a while loop by checking if valid is False
