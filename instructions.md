@@ -45,8 +45,8 @@
    - multilist_functions.py
    - validations.py
 - Download the data files to the folder **cw06**
-   - employees.txt https://github.com/suchialex/CINS3002-HW06/blob/main/employees.txt
-   - employees.csv https://github.com/suchialex/CINS3002-HW06/blob/main/employees.csv
+   - [products.txt](https://github.com/suchialex/CINS3002-CW06/blob/main/products.txt)
+   - [products.csv](https://github.com/suchialex/CINS3002-CW06/blob/main/products.csv)
 - Because of this new folder structure, you will have to change your import statements and file open functions with the correct file path
 </details>
 
