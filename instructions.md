@@ -89,14 +89,6 @@
   - Return this formatted product name
 </details>
 
-<details>
-  <summary>📜 Testing</summary>
-
-- If the user enters samsung2 the output must be Invalid Product Name Entered
-- If the user enters Microsoft's Headset, it is valid input
-
-</details>
-
 </details>
   
 
@@ -112,6 +104,15 @@
   - Comment out any code inside main body
   - call validate_product_name and store in a variable (may have to import the appropriate module)
   - print this variable and test code
+
+<details>
+  <summary>📜 Testing</summary>
+
+- If the user enters samsung2 the output must be Invalid Product Name Entered
+- If the user enters Microsoft's Headset, it is valid input
+
+</details>
+
 </details>
 
 
@@ -128,7 +129,7 @@
 - Return valid price
 
 <details>
-  <summary>Code Logic</summary>
+  <summary>🔑 Code Logic</summary>
   
   - Set a flag called valid to False
   - Start a while loop by checking if valid is False
@@ -141,14 +142,6 @@
   - Return this valid price
 </details>
   
-<details>
-  <summary>📜 Testing</summary>
-
-- If the user enters ten thousand, the output must be Invalid Price Entered
-- If the user enters $1000, the output must be Invalid Price Entered
-- If the user enters 455 or 350.99, those are valid input
-
-</details>
 </details> 
 
 ## In main.py
@@ -160,6 +153,16 @@
   - You may comment out other validate functions if they are working correctly
   - call validate_price store in a variable
   - print the above variable and test code with the test cases provided
+
+<details>
+  <summary>📜 Testing</summary>
+
+- If the user enters ten thousand, the output must be Invalid Price Entered
+- If the user enters $1000, the output must be Invalid Price Entered
+- If the user enters 455 or 350.99, those are valid input
+
+</details>
+
 </details>
 
 ## In validations.py
@@ -191,15 +194,6 @@
   Outside the while loop, return the quantity
 </details>
 
-<details>
-  <summary>📜 Testing</summary>
-
-- If the user enters apple, the output must be Invalid Quantity Entered
-- If the user enters 30000 or 35.0, the output must be Invalid Quantity Entered
-- If the user enters 66 , the output must be 66
-
-</details>
-
 </details>
 
 ## In main.py
@@ -212,6 +206,16 @@
   - You may comment out other validate functions if they are working correctly
   - call validate_quantity 
   - print the above variable and see if it is working correctly
+
+<details>
+  <summary>📜 Testing</summary>
+
+- If the user enters apple, the output must be Invalid Quantity Entered
+- If the user enters 30000 or 35.0, the output must be Invalid Quantity Entered
+- If the user enters 66 , the output must be 66
+
+</details>
+
 </details>
 
 
@@ -230,7 +234,7 @@
   - Modify display_products() to add the quanity at the end, use formatting that best fits the data
 </details>
 
-## Bonus: 1pt (If all the below are done)
+## Bonus: 1pt
 
 <details>
   <summary>
