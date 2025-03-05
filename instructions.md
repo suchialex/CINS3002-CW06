@@ -202,3 +202,31 @@
 </details>
 
 
+<details>
+  <summary>
+    ✅ After testing validations
+  </summary>
+
+  - If all the validation functions execute correctly, **delete all the validate calls from main** and uncomment the call to product_operations
+  - Make sure you are importing multilist_functions
+  - In add_product() function, after call to validate_price(), add a function call to validate_quantity, add this as a new element to the product list
+  - Execute your code, add a new product and test if new product is added with quantity
+  - Modify display_products() to add the quanity at the end, use formatting that best fits the data
+</details>
+
+
+## Copy code to replit
+
+<details>
+  <summary>
+    ✅ Copy code to replit
+  </summary>
+  
+  - Copy the contents of functions.py, list_functions.py, multilist_functions.py, validations.py, products.csv products.txt to replit under folder cw06
+  - Comment out the existing import statement and code in main function body
+  - Copy and paste the import statement and code from main.py in your PyCharm Project
+  - Submit the URL on Canvas assignment
+</details>
+
+
+
