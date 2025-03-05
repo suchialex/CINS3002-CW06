@@ -80,14 +80,25 @@
   - Inside the while loop
     - Using an input statement to ask for employee first name, store it in a variable
     - Using the appropriate string methods, check if name is alphabetical with special characters
+    - 💡 One way to do this is to use a for loop and count the number of digits (similar to validating employee last name)
+    - 💡 Another way is to use any() function
       - If yes, set valid to True
-      - If not, print `Invalid Product Name` Entered
+      - If not, print `Invalid Product Name Entered`
   Outside the while loop, (the product name is valid, if you made it out of the while loop)
   - Format product name to where the first letter of each word is capitalized and the rest of them are lowercase
   - Return this formatted product name
+
+<details>
+  <summary>📜 Testing</summary>
+
+- If the user enters samsung2 the output must be Invalid Product Name Entered
+- If the user enters Microsoft's Headset, it is valid input
+
+</details>
+
 </details>
   
-</details>
+
 
 
 ## In main.py
@@ -123,8 +134,8 @@
   - Inside the while loop
     - Using an input statement to ask for price, store it in a variable
   - Using the appropriate string methods, check if price is only numeric, may contain only `.` and no alphabetic characters
-    - 💡One way to do this is to replace the . with "" and then check if the resultant string is all numeric, if yes, valid is True else print `Invalid Price Entered`
-    - 💡Another way is to use a try block and convert the input to a float, if exception is raised, valid is False and print `Invalid Price Entered`, in else block valid is True
+    - 💡 One way to do this is to replace the . with "" and then check if the resultant string is all numeric, if yes, valid is True else print `Invalid Price Entered`
+    - 💡 Another way is to use a try block and convert the input to a float, if exception is raised, valid is False and print `Invalid Price Entered`, in else block valid is True
   - Outside the while loop, (the price is valid if you made it out of the while loop)
   - Return this valid price
 </details>
@@ -168,11 +179,12 @@
   - Set a flag called valid to False
   - Start a while loop by checking if valid is False
   - Inside the while loop
-    - Using an input statement to ask for product qty, store it in a variable
+    - Using an input statement to ask for product quantity, store it in a variable
   - Using the appropriate string methods, check if quantity is
     - only numeric
     - between 0 and 100
     - and is not empty
+    - 💡 One way to do this is test if the string has all numeric data (similar to validating employee salary)
   - If yes, set valid to True
   - If not, print Invalid Quantity Entered  
   Outside the while loop, return the quantity
@@ -209,9 +221,31 @@
 
   - If all the validation functions execute correctly, **delete all the validate calls from main** and uncomment the call to product_operations
   - Make sure you are importing multilist_functions
-  - In add_product() function, after call to validate_price(), add a function call to validate_quantity, add this as a new element to the product list
-  - Execute your code, add a new product and test if new product is added with quantity
+  - In add_product() function, after call to validate_price(), add a function call to validate_quantity(), add this as a new element to the product list
+  - Execute your code, add the following new product and test if it is added with quantity
+    - product name: apple watch
+    - product price: $355.89
+    - product quantity: 15
   - Modify display_products() to add the quanity at the end, use formatting that best fits the data
+</details>
+
+## Bonus: 1pt (If all the below are done)
+
+<details>
+  <summary>
+    ✅ Add functions/code to accommodate the new data field - quantity
+  </summary>
+
+  - Edit employees.txt to add quantity (choose your values) for each product after its price line
+  - In main.py. import list_functions instead of multilist_functions
+  - In add_product() function, after call to validate_price(), add a function call to validate_quantity(), add this as a new element to the products list
+  - Execute your code, add the following new product and test if it is added with quantity
+    - product name: apple watch
+    - product price: $355.89
+    - product quantity: 15
+  - Modify display_products() to add the quanity at the end, use formatting that best fits the data
+  - Add a new function update_price() and write code for it using other update functions' code logic
+  - Add this to your printed menu options and add the appropriate elif block for update_price
 </details>
 
 
