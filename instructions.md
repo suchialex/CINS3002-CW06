@@ -2,7 +2,7 @@
 
 <details>
   <summary>
-    💡 REPL/PyCharm Guide
+    💡 REPL/PyCharm/VSCode Guide
   </summary>
 
   - To toggle commenting, highlight the line(s) and press Ctrl + /
