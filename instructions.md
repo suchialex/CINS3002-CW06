@@ -37,9 +37,9 @@
   </summary>
 
 - Create a new project in PyCharm and a folder of your choice
-- Copy main.py from HW05
+- Copy main.py from CW05
 - Create a new folder called **cw06**
-- Copy the code for the functions below from HW05 into the folder **cw06**
+- Copy the code for the functions below from CW05 into the folder **cw06**
    - functions.py
    - list_functions.py
    - multilist_functions.py
@@ -249,7 +249,7 @@
     - product price: $355.89
     - product quantity: 15
   - Modify display_products() to add the quanity at the end, use formatting that best fits the data
-  - Add a new function update_price() and write code for it using other update functions' code logic
+  - Add a new function update_quantity() and write code for it using other update functions' code logic
   - Add this to your printed menu options and add the appropriate elif block for update_price
 </details>
 
